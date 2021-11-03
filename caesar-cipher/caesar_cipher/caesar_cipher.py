@@ -78,7 +78,7 @@ that an encrypted message can be transformed into its original state WITHOUT acc
 def crack(encrypted_data):
 
 
-    for word in range (0,26):
+    for word in range (1,27):
 
 
         data = decrypt(encrypted_data,word)
@@ -87,7 +87,7 @@ def crack(encrypted_data):
         percent = int(count_words(data) / len(encrypted_data.split()) * 100)
 
 
-        if percent > 50:
+        if percent < 50:
 
 
             return data 
@@ -116,3 +116,5 @@ def count_words(text):
 
     
 
+print(encrypt('shahd',1))
+print(decrypt('shahd',1))
