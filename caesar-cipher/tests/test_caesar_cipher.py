@@ -54,3 +54,19 @@ def test_count_words():
     assert expexted==real
 
 
+def test_crack():
+    data =crack('tibie')
+    expexted ='shahd'
+    real=data
+    assert expexted==real
+
+
+
+
+
+
+
+
+
+
+
